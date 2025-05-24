@@ -25,45 +25,28 @@
         </div>
     </header>
 
-    <main>
-        <p>Aqui ficará o conteúdo principal da sua página Rich.</p>
-    </main>
+    <main class="grid-container">
+        <div class="grid-line linha1">
+            <div class="linha1-interna linha1-topo">
+                <div class="coluna coluna1"></div>
+                <div class="coluna coluna2">
+                    <div class="texto-centralizado">
+                        <h2>STARLINK PARA RESIDÊNCIAS</h2>
+                        <p>Internet estável de alta velocidade, onde quer que você more.</p>
+                        <p>A Starlink Mini já está disponível no Brasil por R$ 1.799 ou em 12 x R$ 150 sem juros.</p>
+                        <p><strong>Até 280 Mbps no Brasil.</strong> As velocidades podem variar.</p>
+                    </div>
+                </div>
+                <div class="coluna coluna3"></div>
+            </div>
 
-    <footer>
-        <p>© 2025 Starlink. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Rich</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-
-    <header>
-        <div class="header-left">
-            <h1>Starlink</h1>
-            <nav>
-                <a href="#">Residencial</a>
-                <a href="#">Viagem</a>
-            </nav>
+            <div class="linha1-interna linha1-meio">Conteúdo da linha do meio</div>
+            <div class="linha1-interna linha1-base">Conteúdo da base</div>
         </div>
-        <div class="header-right">
-            <a href="#">Pessoal</a>
-            <a href="#">Comercial</a>
-            <a href="{{ url_for('rich_page') }}">
-                <button class="menu-btn">RICHHHH</button>
-            </a>
-        </div>
-    </header>
 
-    <main>
-        <p>Aqui ficará o conteúdo principal da sua página Rich.</p>
+        <div class="grid-line linha2">Linha 2</div>
+        <div class="grid-line linha3">Linha 3</div>
+        <div class="grid-line linha4">Linha 4</div>
     </main>
 
     <footer>
