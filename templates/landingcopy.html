@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlink | Residencial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" aria-label="Início">
+                    <img src="{{ url_for('static', filename='images/starlink-logo.svg') }}" alt="Starlink">
+                </a>
+            </div>
+            <div class="menu-button">
+                <button>
+                    <img src="{{ url_for('static', filename='images/menu-icon.svg') }}" alt="Abrir Menu">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section - 3648x3222 -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>STARLINK PARA RESIDÊNCIAS</h1>
+                    <p class="subtitle">Internet estável de alta velocidade, onde quer que você more.</p>
+                    
+                    <div class="promo-text">
+                        <p>Starlink Mini já está disponível no Brasil por R$ 1.799 ou em 12 x R$ 150 sem juros.</p>
+                    </div>
+                    
+                    <p class="speed-info">Até 280 Mbps no Brasil. As velocidades podem variar.</p>
+                    
+                    <div class="address-form">
+                        <label for="address">Endereço de uso do serviço</label>
+                        <div class="input-group">
+                            <input type="text" id="address" placeholder="DIGITE E SELECIONE">
+                            <button title="Usar a minha localização atual" class="location-button">
+                                <img src="{{ url_for('static', filename='images/location-icon.svg') }}" alt="Localização">
+                            </button>
+                        </div>
+                        <button class="order-button">PEDIR AGORA</button>
+                    </div>
+                    
+                    <div class="map-link">
+                        <a href="#">Ver mapa de disponibilidade e velocidades</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section - 3648x619 -->
+        <section class="features-section">
+            <div class="container">
+                <h2>ASSISTA A FILMES, FAÇA VIDEOCHAMADAS, JOGUE E MUITO MAIS</h2>
+            </div>
+        </section>
+
+        <!-- Divider - 3648x100 -->
+        <div class="divider"></div>
+
+        <!-- Testimonial Section 1 - 3648x1080 -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="testimonial">
+                    <h3>Baixa latência</h3>
+                    <p class="quote">"É um cenário totalmente diferente…Antes da Starlink, precisávamos economizar os dados e não podíamos usar serviços de streaming. Agora, baixamos arquivos, deixamos a Pandora tocando, fazemos ligações pelo Zoom e tudo isso sem latência alguma."</p>
+                    <p class="author">- William D. do Colorado, EUA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section 2 - 3648x1080 -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="testimonial">
+                    <h3>Um divisor de águas</h3>
+                    <p class="quote">"Está em outro patamar! Sem promessas exageradas nem desempenho insatisfatório como com o provedor anterior. É só conectar os cabos e apontar a antena para o céu! Em menos de 5 minutos, nós, que antes éramos esquecidos, passamos a ter a conexão de internet mais rápida da região."</p>
+                    <p class="author">- Aaron W., do sul da Inglaterra</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Info Section - 3648x1930 -->
+        <section class="product-info-section">
+            <div class="container">
+                <div class="product-info">
+                    <h2>Conecte-se em minutos</h2>
+                    <p>A Starlink é a única solução de internet que você pode instalar sozinho em questão de minutos, sem a necessidade de técnicos, escavações ou equipamentos especializados.</p>
+                    <div class="product-image">
+                        <img src="{{ url_for('static', filename='images/starlink-device.png') }}" alt="Dispositivo Starlink">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section 3 - 3648x1080 -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="testimonial">
+                    <h3>Rapidez impressionante</h3>
+                    <p class="quote">"Milhões não têm acesso à internet, mas tenho a alegria de dizer que já não fazemos mais parte desse grupo. Com uma rapidez impressionante e conexão em questão de minutos, a Starlink encerra uma busca de seis anos."</p>
+                    <p class="author">- Neil V., de Nova Gales do Sul, Austrália</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section - 3648x1080 -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Pronto para se conectar?</h2>
+                    <p>Peça agora e receba seu kit Starlink em poucos dias.</p>
+                    <button class="cta-button">PEDIR AGORA</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section - 3648x2012 -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Perguntas frequentes</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <h3>O que é a Starlink?</h3>
+                        <p>A Starlink é um serviço de internet via satélite que oferece conexão de alta velocidade em qualquer lugar, mesmo em áreas remotas onde a internet tradicional não está disponível ou é de baixa qualidade.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Como funciona a instalação?</h3>
+                        <p>A instalação é simples e pode ser feita por você mesmo. Basta conectar o dispositivo à energia, posicioná-lo com visão clara para o céu e configurar através do aplicativo Starlink.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quais são as velocidades oferecidas?</h3>
+                        <p>No Brasil, a Starlink oferece velocidades de até 280 Mbps, dependendo da sua localização e condições atmosféricas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='images/starlink-logo.svg') }}" alt="Starlink">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos de serviço</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Starlink. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
