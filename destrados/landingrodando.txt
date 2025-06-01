@@ -1,0 +1,183 @@
+html
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlink | Residencial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+</head>
+<body>
+
+    <div class="page-grid-container">
+
+        <header class="grid-item header-line">
+            Cabeçalho
+        </header>
+
+        <section class="grid-item content-line-1">
+            Conteúdo - Linha 1
+        </section>
+
+        <section class="grid-item content-line-2">
+            Conteúdo - Linha 2
+        </section>
+
+        <section class="grid-item content-line-3">
+            Conteúdo - Linha 3
+        </section>
+
+        <section class="grid-item content-line-4">
+            Conteúdo - Linha 4
+        </section>
+
+        <section class="grid-item content-line-5">
+            Conteúdo - Linha 5
+        </section>
+
+        <section class="grid-item content-line-6">
+            Conteúdo - Linha 6
+        </section>
+
+        <section class="grid-item content-line-7">
+            Conteúdo - Linha 7
+        </section>
+
+        <section class="grid-item content-line-8">
+            Conteúdo - Linha 8
+        </section>
+
+        <section class="grid-item content-line-9">
+            Conteúdo - Linha 9
+        </section>
+
+        <footer class="grid-item footer-line">
+            Rodapé
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+css
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- GRID PRINCIPAL DA PÁGINA (11 LINHAS) --- */
+.page-grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma única coluna ocupando 100% da largura */
+
+    /* Alturas fixas apenas onde realmente necessário */
+    grid-template-rows:
+        68px   /* header-line */
+        auto   /* content-line-1 */
+        auto   /* content-line-2 */
+        auto   /* content-line-3 */
+        auto   /* content-line-4 */
+        auto   /* content-line-5 */
+        auto   /* content-line-6 */
+        auto   /* content-line-7 */
+        auto   /* content-line-8 */
+        auto   /* content-line-9 */
+        100px; /* footer-line */
+
+    min-height: 100vh;
+    gap: 0;
+}
+
+/* --- ESTILOS COMUNS PARA TODOS OS ITENS DO GRID PRINCIPAL --- */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* --- CORES ESPECÍFICAS PARA CADA LINHA --- */
+.header-line {
+    background-color: #34495e;
+}
+
+.content-line-1 {
+    background-color: #2ecc71;
+}
+
+.content-line-2 {
+    background-color: #e67e22;
+}
+
+.content-line-3 {
+    background-color: #9b59b6;
+}
+
+.content-line-4 {
+    background-color: #3498db;
+}
+
+.content-line-5 {
+    background-color: #f1c40f;
+}
+
+.content-line-6 {
+    background-color: #e74c3c;
+}
+
+.content-line-7 {
+    background-color: #1abc9c;
+}
+
+.content-line-8 {
+    background-color: #f39c12;
+}
+
+.content-line-9 {
+    background-color: #c0392b;
+}
+
+.footer-line {
+    background-color: #2c3e50;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .page-grid-container {
+        grid-template-rows:
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto;
+        row-gap: 10px;
+    }
+
+    .grid-item {
+        font-size: 1.5em;
+        padding: 15px;
+        margin: 0;
+        align-items: flex-start; /* Melhor para conteúdo longo em telas pequenas */
+    }
+}
+

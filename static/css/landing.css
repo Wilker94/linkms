@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font: 15px/30px Helvetica,Arial,Verdana,sans-serif;
+    /*font-family: Arial, sans-serif;*/
+}
+
+/* --- GRID PRINCIPAL DA PÁGINA (11 LINHAS) --- */
+.page-grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma única coluna ocupando 100% da largura */
+
+    /* Alturas fixas apenas onde realmente necessário */
+    grid-template-rows:
+        80px   /* header-line */
+        800px   /* content-line-1 */
+        auto   /* content-line-2 */
+        auto   /* content-line-3 */
+        auto   /* content-line-4 */
+        auto   /* content-line-5 */
+        auto   /* content-line-6 */
+        auto   /* content-line-7 */
+        auto   /* content-line-8 */
+        auto   /* content-line-9 */
+        100px; /* footer-line */
+
+    min-height: 100vh;
+    gap: 0;
+}
+
+/* --- ESTILOS COMUNS PARA TODOS OS ITENS DO GRID PRINCIPAL --- */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.grid-item0 {
+    display: flex;
+    padding: 10px;
+
+}
+/* --- CORES ESPECÍFICAS PARA CADA LINHA --- */
+
+.content-line-0 {
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+    text-decoration: none; /* opcional, remove o sublinhado */
+    
+}
+
+.header-line { 
+    background-color: #34495e;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 2fr 4fr 2fr; /* três colunas iguais */
+    align-items: center;
+    /*padding: 0 20px;*/
+    height: auto; /* ou o valor que estiver usando */
+}
+
+.logo {
+    align-items: center;
+}
+
+.left-header {
+    align-self: start;
+    margin-left: 30px;
+
+}
+
+.left2-header {
+
+    align-self: start;
+    margin-left: 30px;
+
+}
+
+.right-header {
+    align-self: start;
+    margin-left: 30px;
+}
+
+.header-href {
+    color: white;
+    font-weight: bold;
+    text-decoration: none; /* opcional, remove o sublinhado */
+    padding: 5px;
+
+}
+
+.content-line-1 {
+    background-color: #2ecc71;
+}
+
+.content-line-2 {
+    background-color: #e67e22;
+}
+
+.content-line-3 {
+    background-color: #9b59b6;
+}
+
+.content-line-4 {
+    background-color: #3498db;
+}
+
+.content-line-5 {
+    background-color: #f1c40f;
+}
+
+.content-line-6 {
+    background-color: #e74c3c;
+}
+
+.content-line-7 {
+    background-color: #1abc9c;
+}
+
+.content-line-8 {
+    background-color: #f39c12;
+}
+
+.content-line-9 {
+    background-color: #c0392b;
+}
+
+.footer-line {
+    background-color: #2c3e50;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .page-grid-container {
+        grid-template-rows:
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto;
+        row-gap: 10px;
+    }
+
+    .grid-item {
+        font-size: 1.5em;
+        padding: 15px;
+        margin: 0;
+        align-items: flex-start; /* Melhor para conteúdo longo em telas pequenas */
+    }
+}

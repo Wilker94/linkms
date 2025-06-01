@@ -1,0 +1,483 @@
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header - 3648x100 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.menu-button button {
+    background: transparent;
+    padding: 8px;
+}
+
+.menu-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hero Section - 3648x3222 */
+.hero-section {
+    position: relative;
+    height: calc(100vh * (3222/3648));
+    min-height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/starlink-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.promo-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.speed-info {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.address-form {
+    margin-bottom: 30px;
+}
+
+.address-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ffa500;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background-color: rgba(80, 80, 80, 0.7);
+    color: white;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.location-button {
+    background-color: rgba(80, 80, 80, 0.7);
+    padding: 0 15px;
+    border-radius: 0 4px 4px 0;
+}
+
+.order-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffa500;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: #ff8c00;
+}
+
+.map-link {
+    margin-top: 20px;
+}
+
+.map-link a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+/* Features Section - 3648x619 */
+.features-section {
+    height: calc(100vh * (619/3648));
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #111;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Divider - 3648x100 */
+.divider {
+    height: calc(100vh * (100/3648));
+    min-height: 30px;
+    background-color: #000;
+}
+
+/* Testimonial Sections - 3648x1080 */
+.testimonial-section {
+    height: calc(100vh * (1080/3648));
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #0a0a0a;
+}
+
+.testimonial-section:nth-child(odd) {
+    background-color: #080808;
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.author {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+/* Product Info Section - 3648x1930 */
+.product-info-section {
+    height: calc(100vh * (1930/3648));
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    background-color: #0a0a0a;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.product-info p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.product-image {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* CTA Section - 3648x1080 */
+.cta-section {
+    height: calc(100vh * (1080/3648));
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #080808;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 40px;
+    background-color: #ffa500;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff8c00;
+}
+
+/* FAQ Section - 3648x2012 */
+.faq-section {
+    height: calc(100vh * (2012/3648));
+    min-height: 600px;
+    padding: 80px 0;
+    background-color: #0a0a0a;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-items {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffa500;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+/* Footer - 3648x100 */
+.footer {
+    height: calc(100vh * (100/3648));
+    min-height: 80px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .features-section h2,
+    .product-info h2,
+    .cta-content h2,
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .promo-text {
+        font-size: 1rem;
+    }
+    
+    .features-section h2,
+    .product-info h2,
+    .cta-content h2,
+    .faq-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .testimonial h3 {
+        font-size: 1.5rem;
+    }
+    
+    .quote {
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-logo, .footer-links, .footer-copyright {
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .features-section h2,
+    .product-info h2,
+    .cta-content h2,
+    .faq-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .testimonial h3 {
+        font-size: 1.3rem;
+    }
+    
+    .quote {
+        font-size: 0.9rem;
+    }
+    
+    .footer-links ul {
+        flex-direction: column;
+    }
+    
+    .footer-links li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
