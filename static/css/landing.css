@@ -11,8 +11,8 @@ body {
 
     /* Alturas fixas apenas onde realmente necessário */
     grid-template-rows:
-        80px   /* header-line */
-        800px   /* content-line-1 */
+        800px    /*header-line */
+        auto   /* content-line-1 */
         auto   /* content-line-2 */
         auto   /* content-line-3 */
         auto   /* content-line-4 */
@@ -20,7 +20,6 @@ body {
         auto   /* content-line-6 */
         auto   /* content-line-7 */
         auto   /* content-line-8 */
-        auto   /* content-line-9 */
         100px; /* footer-line */
 
     min-height: 100vh;
@@ -41,29 +40,68 @@ body {
     overflow-y: auto;
 }
 
-.grid-item0 {
+
+
+/*.grid-item0 {
     display: flex;
-    padding: 10px;
+}*/
+
+.grid-item0 {
+    display: grid;
+    grid-template-rows: auto auto; /* header + conteúdo da linha 0 */
+    width: 100%;
+    background-image: url("../imagens/fundo-cabc.webp"); /* ajuste o caminho conforme necessário */
+    background-size: cover;         /* cobre toda a área */
+    background-position: center;    /* centraliza a imagem */
+    background-repeat: no-repeat;   /* impede repetição */
+}
+
+
+.grid-item0-1 {
+    display: flex;
+    /*background-color: #34495e;*/
+    background: transparent;
+
 
 }
+
+
+.line-0 {
+
+    /*background-color: #34495e;*/
+    display: grid;
+    margin-top: 50px;
+    grid-template-rows: 100px 700px; /* duas colunas iguais */
+    align-items: center;
+    /*padding: 0 20px;*/
+    height: auto; /* ou o valor que estiver usando */
+
+}   
+
 /* --- CORES ESPECÍFICAS PARA CADA LINHA --- */
 
+
+
 .content-line-0 {
-    background-color: #2ecc71;
+    /*background-color: #2ecc71;*/
+    background: transparent;
+
     color: white;
     font-weight: bold;
     text-decoration: none; /* opcional, remove o sublinhado */
     
 }
 
+
 .header-line { 
-    background-color: #34495e;
+    /*background-color: #34495e;*/
+    
     display: grid;
     margin-top: 20px;
-    grid-template-columns: 1fr 2fr 4fr 2fr; /* três colunas iguais */
+    grid-template-columns: 1fr 1fr 3fr 1fr auto; /* três colunas iguais */
     align-items: center;
     /*padding: 0 20px;*/
-    height: auto; /* ou o valor que estiver usando */
+    /*height: auto;  ou o valor que estiver usando */
 }
 
 .logo {
@@ -79,13 +117,26 @@ body {
 .left2-header {
 
     align-self: start;
-    margin-left: 30px;
+    font-size: 1.5em;
+
 
 }
 
 .right-header {
     align-self: start;
+    font-size: 1.5em;
+}
+
+.right2-header {
+    align-self: start;
     margin-left: 30px;
+    background-image: none;
+}
+
+.menu-button {
+    background: none;
+    animation: none;
+    margin-right: 30px;
 }
 
 .header-href {
@@ -96,13 +147,124 @@ body {
 
 }
 
+.content-block-0 {
+    display: grid;
+    grid-template-rows: auto auto; /* header + conteúdo da linha 0 */
+    width: 100%;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*margin-top: 80px;*/
+    padding: 40px 20px;
+    color: white;
+}
+
+.headline {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subline {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.boldline {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #f8f7f4; /* destaque em amarelo, por exemplo */
+}
+
+.random-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3); /* fundo semitransparente */
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.random-section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+
+.linha-endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+    color: white;
+    font-size: 1em;
+}
+
+.endereco-label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.form-endereco {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.endereco-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+}
+
+.botao-endereco {
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-endereco:hover {
+    background-color: #005ec4;
+}
+
+.mapa-link {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+
+
 .content-line-1 {
     background-color: #2ecc71;
 }
 
+
 .content-line-2 {
     background-color: #e67e22;
 }
+
+
 
 .content-line-3 {
     background-color: #9b59b6;
